@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cat:*)"
+    ],
+    "deny": [
+      "Read(.git/**)",
+      "Write(.git/**)",
+      "Edit(.git/**)",
+      "Glob(.git/**)",
+      "Grep(.git/**)",
+      "Read(private/**)",
+      "Write(private/**)",
+      "Edit(private/**)",
+      "Glob(private/**)",
+      "Grep(private/**)"
+    ],
+    "ask": []
+  },
+  "includeCoAuthoredBy": false
+}
