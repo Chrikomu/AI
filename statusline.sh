@@ -1,5 +1,6 @@
 #!/bin/bash
 # Claude Code Statusline
+# Depends on: jq
 
 input=$(cat)
 
