@@ -10,7 +10,7 @@ If the user passed no reference, take the next ticket as defined in [../to-ticke
 
 Use /tdd where possible, at the seams the spec or ticket agreed.
 
-Typecheck and run single test files as you go; run the full suite once at the end.
+Build and run individual tests as you go; run the full suite once at the end.
 
 Once done, mark the ticket `Implemented` if you worked one, then run /code-review against the ticket or spec, with the commit you started from as the fixed point.
 
