@@ -76,6 +76,8 @@ Present the two reports under `## Standards` and `## Spec` headings, verbatim or
 
 End with a one-line summary: total findings per axis, and the worst issue _within each axis_ (if any). Don't pick a single winner across axes: that's the reranking the separation exists to prevent.
 
+If the review was based on a ticket, set that ticket's `state` to `Reviewed` once the report is delivered.
+
 ## Why two axes
 
 A change can pass one axis and fail the other:
