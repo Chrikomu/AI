@@ -1,12 +1,10 @@
 ---
 name: to-spec
-description: "Turn the current conversation into a spec and publish it to the project issue tracker: no interview, just synthesis of what you've already discussed."
+description: "Turn the current conversation into a spec file: no interview, just synthesis of what you've already discussed."
 disable-model-invocation: true
 ---
 
 This skill takes the current conversation context and codebase understanding and produces a spec. Do NOT interview the user; just synthesize what you already know.
-
-If the project's issue tracker and label vocabulary are not documented in the repo, ask the user which tracker and labels to use.
 
 ## Process
 
@@ -16,7 +14,7 @@ If the project's issue tracker and label vocabulary are not documented in the re
 
 Check with the user that these seams match their expectations.
 
-3. Write the spec using the template below, then publish it to the project issue tracker. Apply the `ready-for-agent` triage label - no need for additional triage.
+3. Write the spec using the template below to `.scratch/<feature-slug>/spec.md`. End by printing the file path in chat.
 
 <spec-template>
 
