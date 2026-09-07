@@ -6,12 +6,12 @@ disable-model-invocation: true
 
 Implement the work described by the user in the spec or tickets.
 
-If the user passed no reference, take the next ticket from the offline tracker described in [../to-tickets/TICKET-FORMAT.md](../to-tickets/TICKET-FORMAT.md): the frontier ticket with the lowest `priority`. Tell the user which one you picked.
+If the user passed no reference, take the next ticket as defined in [../to-tickets/TICKET-FORMAT.md](../to-tickets/TICKET-FORMAT.md) and tell the user which one you picked.
 
-Use /tdd where possible, at pre-agreed seams.
+Use /tdd where possible, at the seams the spec or ticket agreed.
 
-Run typechecking regularly, single test files regularly, and the full test suite once at the end.
+Typecheck and run single test files as you go; run the full suite once at the end.
 
-Once done, use /code-review to review the work.
+Once done, mark the ticket `Implemented` if you worked one, then run /code-review against the ticket or spec, with the commit you started from as the fixed point.
 
-Commit your work to the current branch. If you worked a ticket, set its `state` to `Implemented`.
+Commit your work to the current branch.

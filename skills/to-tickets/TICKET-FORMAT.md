@@ -16,7 +16,7 @@ The offline issue tracker is a flat directory, `.scratch/tickets/`, holding one 
 
 - `id`: `<feature-slug>-<NN>`, `NN` zero-padded from `01` in dependency order (blockers first). Unique across the directory.
 - `state`: `Ready` or `Implemented`.
-- `priority`: integer, lower runs first. New tickets continue from the current maximum in the directory, in steps of 10, so the GUI can reorder without renumbering everything.
+- `priority`: integer, lower runs first. New tickets continue from the directory's current maximum. Ids keep dependency order; priority decides what runs next.
 - `blockedBy`: ids of tickets that must be `Implemented` before this one can start. Empty when it can start immediately.
 - `spec`: path of the originating spec, or omitted.
 - `body`: Markdown. "What to build" is the end-to-end behaviour from the user's perspective, not a layer-by-layer list, followed by checkbox acceptance criteria.

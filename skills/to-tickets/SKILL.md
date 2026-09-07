@@ -8,8 +8,6 @@ disable-model-invocation: true
 
 Break a plan, spec, or conversation into a set of **tickets**: tracer-bullet vertical slices, each declaring the tickets that **block** it.
 
-Tickets live in the offline tracker described in [TICKET-FORMAT.md](TICKET-FORMAT.md).
-
 ## Process
 
 ### 1. Gather context
@@ -57,7 +55,7 @@ Iterate until the user approves the breakdown.
 
 ### 5. Write the tickets to the offline tracker
 
-Write one JSON file per ticket under `.scratch/tickets/`, exactly as TICKET-FORMAT.md specifies: all in state `Ready`, ids numbered in dependency order (blockers first), priorities continuing from the directory's current maximum so existing tickets keep their order. Never combine tickets into one file, and never modify existing tickets.
+Write one JSON file per ticket under `.scratch/tickets/`, exactly as [TICKET-FORMAT.md](TICKET-FORMAT.md) specifies, all in state `Ready`. Never combine tickets into one file, and never modify existing tickets.
 
 End by listing the ids and titles written, in priority order.
 
