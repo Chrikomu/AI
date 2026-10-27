@@ -1,0 +1,6 @@
+#!/bin/sh
+# SUDO_ASKPASS helper: sudo passes its prompt as $1 and reads the password from stdout.
+# Exiting non-zero (Cancel, no display, no zenity) makes sudo fail cleanly.
+[ -n "$DISPLAY$WAYLAND_DISPLAY" ] || exit 1
+command -v zenity >/dev/null 2>&1 || exit 1
+exec zenity --password --title="Claude Code: ${1:-sudo password}" 2>/dev/null

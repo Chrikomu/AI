@@ -1,0 +1,1 @@
+{ "name": "sudo-askpass", "version": "0.1.0", "description": "Lets sudo in Claude's Bash tool ask you for your password in a graphical dialog" }
